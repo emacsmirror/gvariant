@@ -1,11 +1,21 @@
-;;; gvariant.el --- GVariant (Glib/Gnome) helpers -*- lexical-binding: t; -*-
+;;; gvariant.el --- GVariant (GLib) helpers -*- lexical-binding: t; -*-
+
+;; Author: wouter bolsterlee <wouter@bolsterl.ee>
+;; Keywords: languages
+;; URL: https://github.com/wbolster/emacs-gvariant
+;; Package-Requires: ((emacs "24") (parsec "0.1.3"))
+;; Version: 0.1.0
+
+;; Copyright 2019 wouter bolsterlee. Licensed under the 3-Clause BSD License.
 
 ;;; Commentary:
 
-;; todo
-
-;; More information
-
+;; This package provides helpers for GVariant strings. The only public
+;; function is ‘gvariant-parse’, which parses a string into an elisp
+;; data structure.
+;;
+;; More information:
+;;
 ;; - https://developer.gnome.org/glib/stable/gvariant-text.html
 ;; - https://developer.gnome.org/glib/stable/gvariant-format-strings.html
 
