@@ -53,6 +53,7 @@
    (parsec-try
     (gvariant--type-prefix)))
   (parsec-or
+   (gvariant--nothing)
    (gvariant--boolean)
    (gvariant--number)
    (gvariant--string)
@@ -72,6 +73,10 @@
        (parsec-re gvariant--format-string-regex))
     (parsec-ch ?\s)
     (gvariant--whitespace)))
+
+(defun gvariant--nothing ()
+  "Parse an empty GVariant value."
+  (parsec-and (parsec-str "nothing") nil))
 
 (defun gvariant--boolean ()
   "Parse a GVariant boolean."

@@ -12,6 +12,9 @@
   (should (equal (gvariant-parse "false") nil))
   (should (equal (gvariant-parse "boolean true") t)))
 
+(ert-deftest gvariant--test-parsing-nothing ()
+  (should (equal (gvariant-parse "nothing") nil)))
+
 (ert-deftest gvariant--test-parsing-number ()
   (should (equal (gvariant-parse "123") 123))
   (should (equal (gvariant-parse "+123") 123))
