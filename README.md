@@ -1,5 +1,27 @@
+gvariant.el
+===========
+
+This Emacs package provides helpers for GVariant strings.
+
+More information:
+
+- https://developer.gnome.org/glib/stable/gvariant-text.html
+- https://developer.gnome.org/glib/stable/gvariant-format-strings.html
+
+The only public function is `gvariant-parse`, which parses a string
+into an elisp data structure.
+
+``` elisp
+(require 'gvariant)
+
+(gvariant-parse "uint32 12")     ;; returns 12
+(gvariant-parse "('foo', 123)")  ;; returns '("foo" 123)
+```
+
+See the unit tests for more examples.
+
 License
-=======
+-------
 
 (This is the OSI approved 3-Clause BSD License.)
 
