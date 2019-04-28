@@ -221,4 +221,4 @@
      (gvariant--comma-separator)))))
 
 (provide 'gvariant)
-;;; gvariant ends here
+;;; gvariant.el ends here
