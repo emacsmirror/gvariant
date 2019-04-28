@@ -45,7 +45,7 @@
     (parsec-with-input s
       (parsec-return
           (gvariant--value)
-        (parsec-eob)))))
+        (parsec-eol-or-eof)))))
 
 (defun gvariant--value ()
   "Parse a GVariant value."
