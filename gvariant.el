@@ -13,11 +13,6 @@
 ;; This package provides helpers for GVariant strings. The only public
 ;; function is ‘gvariant-parse’, which parses a string into an elisp
 ;; data structure.
-;;
-;; More information:
-;;
-;; - https://developer.gnome.org/glib/stable/gvariant-text.html
-;; - https://developer.gnome.org/glib/stable/gvariant-format-strings.html
 
 ;;; Code:
 
