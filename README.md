@@ -3,6 +3,12 @@ gvariant.el
 
 This Emacs package provides helpers for GVariant strings.
 
+GVariant is used for the Gnome configuration system, GSettings (and in
+various other places in the Gnome software stack). To interact with
+GSettings from Emacs, use
+[gsettings.el](https://github.com/wbolster/emacs-gsettings) instead,
+which builds on top of this low-level library.
+
 More information:
 
 - https://developer.gnome.org/glib/stable/gvariant-text.html
