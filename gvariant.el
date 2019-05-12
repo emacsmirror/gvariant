@@ -36,7 +36,21 @@
   "Regular expression to detect GVariant format strings.")
 
 (defconst gvariant--type-keywords-regex
-  "\\(boolean\\|byte\\|int16\\|uint16\\|int32\\|uint32\\|handle\\|int64\\|uint64\\|double\\|string\\|objectpath\\|signature\\)"
+  (regexp-opt
+   '("boolean"
+     "byte"
+     "double"
+     "handle"
+     "int16"
+     "int32"
+     "int64"
+     "objectpath"
+     "signature"
+     "string"
+     "uint16"
+     "uint32"
+     "uint64")
+   'words)
   "Regular expression to detect GVariant type keywords.")
 
 (defun gvariant-parse (s)
