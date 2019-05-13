@@ -1,7 +1,5 @@
-License
-=======
-
-(This is the OSI approved *BSD-3-clause* license.)
+BSD-3-clause License
+====================
 
 Copyright © 2019, wouter bolsterlee
 
