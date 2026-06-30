@@ -4,7 +4,7 @@
 ;; Keywords: languages
 ;; URL: https://github.com/wbolster/emacs-gvariant
 ;; Package-Requires: ((emacs "24") (parsec "0.1.4"))
-;; Version: 1.0.0
+;; Version: 1.1.0
 
 ;; Copyright 2019 wouter bolsterlee. Licensed under the BSD-3-clause license.
 
